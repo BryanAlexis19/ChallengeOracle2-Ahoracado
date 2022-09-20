@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" type="text/css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet" />
+  <title>Juego Ahorcado</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logoAlura.png" alt="logoAlura" />
+  </header>
+  <main>
+    <!-- <section class="caja-ingreso">
+      <form action="" onsubmit="btnEncriptar()" class="formu-ingreso">
+        <textarea type="text" name="txtIngreso" id="txtIngreso" placeholder="Ingrese el texto aquí" cols="100"
+          rows="60" /></textarea>
+
+        <div class="caja-botones">
+          <input type="submit" value="Encriptar" name="btnEncriptation" id="btnEncriptation"
+            onclick="btnEncriptarHandler()" />
+          <input type="submit" value="Desencriptar" name="btnDesencriptation" id="btnDesencriptation"
+            onclick="btnDesencriptarHandler()" />
+        </div>
+      </form>
+    </section>
+
+    <section class="caja-resultadoEmpty" id="caja-resultadoEmpty">
+      <img class="muneco" src="images/muneco.png" alt="muneco" />
+      <p class="title-1" >Ningún mensaje fue encontrado</p>
+      <p class="title-2">
+        Ingrese el texto que desee encriptar o desencriptar
+      </p>
+      <textarea name="txtEncriptado" id="txtEncriptado" cols="30" rows="10"></textarea>
+      <button name="btnCopiar" id="btnCopiar" onclick="btnCopiarHandler()">Copiar</button>
+    </section> -->
+
+    <section class="cajaPrincipal">
+      <button id="btnIniciar">Iniciar juego</button>
+      <button id="btnNuevaPalabra">Agregar nueva palabra</button>
+      <input type="text" name="txtIngresePal" id="txtIngresePal" placeholder="Ingrese una palabra">
+
+      <div class="botoneraAdd">
+        <button id="btnGuardarPal">Guardar y empezar</button>
+        <button id="btnCancelarPal">Cancelar</button>
+      </div>
+      <canvas id="figuraCanva" width="300" height="400"></canvas>
+      <div class="palabra"></div>
+      <div class="erroneo"></div>
+    </section>
+  </main>
+
+  <script src="./scriptv2.js"></script>
+</body>
+
+</html>

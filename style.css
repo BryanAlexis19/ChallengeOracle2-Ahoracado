@@ -1,0 +1,214 @@
+body {
+  background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+}
+
+header img {
+  margin: 40px 80px;
+  width: 40px;
+  height: auto;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+
+/* ----------BOTON DE REVERSE ENCRIPTATION----------- */
+
+.btnArea {
+  position: absolute;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border: none;
+  margin: 16px;
+  padding: 0px;
+  border-radius: 12px;
+  justify-content: center;
+  top: 256px;
+  left: 1080px;
+  font-size: 2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.btnArea button {
+  font-size: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  border: 1px dashed #0a3871;
+}
+
+.btnArea button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* ---------------CAJA DE RESULTADOS ---------------*/
+main{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.cajaPrincipal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 944px;
+  background: #ffffff;
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  margin: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.cajaPrincipal:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+#btnIniciar {
+  box-sizing: border-box;
+  padding: 24px;
+  gap: 8px;
+  width: 336px;
+  height: 67px;
+  /* Dark blue/dark-blue-300 */
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  margin-bottom: 32px;
+  font-size: 1.2em;
+  color: #0a3871;
+}
+
+#btnIniciar:hover {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #d8dfe8;
+  font-weight: bold;
+}
+
+#btnNuevaPalabra {
+  box-sizing: border-box;
+  padding: 24px;
+  gap: 8px;
+  width: 336px;
+  height: 67px;
+  /* Dark blue/dark-blue-300 */
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  margin-bottom: 32px;
+  font-size: 1.2em;
+  color: #0a3871;
+}
+
+#btnNuevaPalabra:hover {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #d8dfe8;
+  font-weight: bold;
+}
+
+.cajaPrincipal img {
+  display: inline;
+  position: relative;
+  width: 336px;
+  height: 304px;
+}
+
+#txtIngresePal {
+  width: 80%;
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0a3871;
+  border: none;
+  border-color: transparent;
+  transition: 0.3s;
+
+}
+
+#txtIngresePal:focus {
+  border: none;
+  border-color: transparent;
+  outline: none;
+}
+
+#txtIngresePal:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+#txtIngresePal::placeholder {
+  color: #0a3871; 
+}
+
+.botoneraAdd button:nth-child(1) {
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  /* Dark blue/dark-blue-300 */
+  background: #0a3871;
+  border-radius: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: white;
+  font-size: 1.2em;
+}
+
+.botoneraAdd button:nth-child(1):hover{
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  font-weight: bold;
+}
+
+.botoneraAdd button:nth-child(2) {
+  box-sizing: border-box;
+  /* Auto layout */
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+
+  background: #d8dfe8;
+  /* Dark blue/dark-blue-300 */
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  border-radius: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-size: 1.2em;
+}
+
+.botoneraAdd button:nth-child(2):hover {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #d8dfe8;
+  font-weight: bold;
+}
+
+#figuraCanva {
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 0px;
+  margin: 24px;
+}
